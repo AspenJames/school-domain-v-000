@@ -10,7 +10,7 @@ class School
   end
 
   def add_student(name, grade)
-    @roster[grade] = Array.new if @roster[grade].nil?
+    @roster[grade] = Array.new if @roster.nil?
     @roster[grade] << name
   end
 
